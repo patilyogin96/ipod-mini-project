@@ -1,13 +1,250 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* wrapper to wrap screen and buttons in one container */
+
+.wrapper {
+  width: 300px;
+  height: 560px;
+  border: 2px solid gray;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 36%;
+  border-radius: 20px;
+  background-color: gainsboro;
+}
+/* main screen styling */
+
+.screen-container {
+  position: absolute;
+  left: 2.5%;
+  width: 280px;
+  height: 265px;
+  border: 2px solid gray;
+
+  margin: 10px auto;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-image: url("./applelogo.webp");
+  background-size: contain;
+}
+
+.op-screen {
+  width: 0%;
+  height: 101.8%;
+  position: absolute;
+
+  left: 0%;
+  overflow-x: hidden;
+  /* display: none; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 25px;
+  z-index: 4;
+
+  transition: width 0.3s ease-in-out;
+  /* background-color: aqua; */
+}
+
+.width-50 {
+  /* display: block; */
+  /* margin-left: 10px; */
+  width: 50% !important;
+  /* height: 167%; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 25px;
+  /* background-color: blue; */
+  position: absolute;
+  z-index: 5;
+}
+
+.op-screen > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 24.7%;
+  border: 1px solid rgb(190, 190, 190);
+  box-sizing: border-box;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.op-screen p {
+  font-size: 20px;
+  overflow-wrap: normal;
+}
+
+.op-screen > .selected {
+  background-color: rgb(89, 89, 255);
+}
+
+/* buttons styling */
+
+.btn-container {
+  position: relative;
+  background-origin: 10%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid grey;
+  margin: 124px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 249, 249);
+  border-radius: 50%;
+  position: relative;
+  bottom: -30%;
+  color: rgb(219, 218, 218);
+}
+
+.inner-circle {
+  width: 50%;
+  height: 50%;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(116, 116, 116);
+
+  font-size: 18px;
+  border: 2px solid gray;
+  background-color: rgb(158, 158, 158);
+}
+
+.menu {
+  position: absolute;
+  top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: rgb(116, 116, 116);
+}
+
+.previous {
+  position: absolute;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: rgb(116, 116, 116);
+}
+
+.next {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: rgb(116, 116, 116);
+}
+
+.play {
+  position: absolute;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: rgb(116, 116, 116);
+}
+
+/* games screen styling */
+
+.display-games {
+  z-index: 0;
+  position: absolute;
+  border-radius: 17px;
+  background-image: url('./diffScreens/images/games.png');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+ 
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  /* color: aliceblue; */
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* music screen styling */
+
+.display-music {
+  position: absolute;
+  z-index: 0;
+  border-radius: 17px;
+  background-image: url('./diffScreens/images/music.png');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: black;
+  
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  /* color: aliceblue; */
+  
+}
+
+/* setting screen styling */
+
+.display-settings {
+  position: absolute;
+  z-index: 0;
+  border-radius: 17px;
+  background-image: url('./diffScreens/images/settings.png');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  /* color: aliceblue; */
+  color:black;
+  background-color: rgb(255, 255, 255);
+}
+
+/* coverflow screen styling */
+
+.display-coverflow{
+  position: absolute;
+  z-index: 0;
+  border-radius: 17px;
+ 
+  
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  /* color: aliceblue; */
+  color:black;
+  background-color: rgb(255, 255, 255);
+  
 }
