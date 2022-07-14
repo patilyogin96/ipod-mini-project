@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ipod-mini-project/static/css/main.f21c32f3.css",
+    "main.js": "/ipod-mini-project/static/js/main.074cf636.js",
+    "static/js/787.b915f030.chunk.js": "/ipod-mini-project/static/js/787.b915f030.chunk.js",
+    "static/media/games.png": "/ipod-mini-project/static/media/games.6f56eb09c464d8ffb674.png",
+    "static/media/music.png": "/ipod-mini-project/static/media/music.7a2157caae63cb2fb782.png",
+    "static/media/settings.png": "/ipod-mini-project/static/media/settings.c7a38725760054472711.png",
+    "static/media/applelogo.webp": "/ipod-mini-project/static/media/applelogo.16709c531a374f24b732.webp",
+    "index.html": "/ipod-mini-project/index.html",
+    "main.f21c32f3.css.map": "/ipod-mini-project/static/css/main.f21c32f3.css.map",
+    "main.074cf636.js.map": "/ipod-mini-project/static/js/main.074cf636.js.map",
+    "787.b915f030.chunk.js.map": "/ipod-mini-project/static/js/787.b915f030.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f21c32f3.css",
+    "static/js/main.074cf636.js"
+  ]
+}
